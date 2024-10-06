@@ -89,6 +89,9 @@ router.get("/search", async (req, res) => {
   }
 });
 
+
+/* this is the filter router made for only checkup purpose*/
+
 router.get("/filter", async (req, res) => {
   const { page = 1, size = 10 } = req.query;
   const from = (page - 1) * size;
